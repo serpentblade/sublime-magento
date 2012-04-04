@@ -1,0 +1,15 @@
+[
+    {
+        "caption": "Magento: Open Class",
+        "command": "magento_open"
+    },
+    {
+        "caption": "Magento: Open Parent Class",
+        "command": "magento_open_parent"
+    },
+    {
+        "caption": "Magento: Insert Class Name",
+        "command": "magento_insert_class"
+    }
+
+]

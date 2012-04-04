@@ -1,0 +1,14 @@
+[
+	{"caption":"-"},
+	{
+		"command": "magento_open",
+		"id":"magento-open",
+		"caption":"Magento: Open File for Class"
+	},
+	{
+		"command": "magento_open_parent",
+		"id":"magento-open-parent",
+		"caption":"Magento: Open Parent Class"
+	},
+	{"caption":"-"}
+]
