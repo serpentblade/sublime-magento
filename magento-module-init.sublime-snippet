@@ -1,0 +1,30 @@
+<snippet>
+    <content><![CDATA[
+<config>
+    <modules>
+        <$1>
+            <version>${2:}</version>
+        </$1>
+    </modules>
+    <global>
+        <models>
+            <${1/(.+)_(.+)/\L$0/}>
+                <class>$1_Model</class>
+            </${1/(.+)_(.+)/\L$0/}>
+        </models>
+        <helpers>
+           <${1/(.+)_(.+)/\L$0/}>
+                <class>$1_Helper</class>
+            </${1/(.+)_(.+)/\L$0/}>
+        </helpers>
+        <blocks>
+            <${1/(.+)_(.+)/\L$0/}>
+                <class>$1_Block</class>
+            </${1/(.+)_(.+)/\L$0/}>
+        </blocks>
+    </global>
+</config>
+]]></content>
+    <tabTrigger>modinit</tabTrigger>->
+    <scope>text.xml</scope>
+</snippet>

@@ -9,7 +9,7 @@ class MagentoOpenCommand(sublime_plugin.TextCommand):
 			text = self.view.substr(sels[0])
 			if(len(text)):
 				self.open(self.get_file(text))
-				
+
 	def get_file(self, text):
 		return text.strip().replace('_', '/') + '.php'
 
