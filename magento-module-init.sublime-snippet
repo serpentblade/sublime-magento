@@ -25,6 +25,6 @@
     </global>
 </config>
 ]]></content>
-    <tabTrigger>modinit</tabTrigger>->
+    <tabTrigger>mag-modinit</tabTrigger>->
     <scope>text.xml</scope>
 </snippet>
