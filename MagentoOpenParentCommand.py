@@ -12,7 +12,7 @@ class MagentoOpenParentCommand(sublime_plugin.TextCommand):
 
 			if len(parentClass):
 				self.open(self.get_file(parentClass))
-				
+
 	def get_file(self, text):
 		return text.strip().replace('_', '/') + '.php'
 

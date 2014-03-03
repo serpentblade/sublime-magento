@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+<config>
+    <modules>
+        <${TM_FILENAME/(.+)\..+/$1/}>
+            <active>true</active>
+            <codePool>${1:}</codePool>
+        </${TM_FILENAME/(.+)\..+/$1/}>
+    </modules>
+</config>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mag-modreg</tabTrigger>
+    <!-- <tabTrigger>hello</tabTrigger> -->
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.xml</scope>
+</snippet>
