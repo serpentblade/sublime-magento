@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<?php foreach (${1:} as ${2:}): ?>
+    ${3:}
+<?php endforeach ?>
+]]></content>
+    <tabTrigger>layout-foreach</tabTrigger>->
+</snippet>
