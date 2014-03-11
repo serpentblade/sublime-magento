@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+ <admin>
+    <routers>
+        <adminhtml>
+            <use>admin</use>
+            <args>
+                <modules>
+                    <${1:} before="Mage_Adminhtml">$1_Adminhtml</$1>
+                </modules>
+            </args>
+        </adminhtml>
+    </routers>
+</admin>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mag-mod-admin-</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.xml</scope>
+</snippet>
