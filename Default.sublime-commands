@@ -8,6 +8,10 @@
         "command": "magento_open_parent"
     },
     {
+        "caption": "Magento: Open From Path",
+        "command": "magento_open_from_path"
+    },
+    {
         "caption": "Magento: Insert Class Name",
         "command": "magento_insert_class"
     },

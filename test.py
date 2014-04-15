@@ -1,10 +1,5 @@
-def fun():
-    r = """<?php
-    class %(class)s extends Mage_Core_Model_Abstract {
-        public function() {
-            $this->_init('');
-        }
-    } """ % {"class" : "stuff"}
-    return r
+import sublime, sublime_plugin
 
-print fun()
+class ExampleCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        self.view.insert(edit, 0, "Hello, World!")
