@@ -3,9 +3,6 @@
     { "keys": ["ctrl+i"], "command": "magento_insert_class", "args": {} },
 
     
-    { "keys": ["ctrl+shift+m"], "command": "magento_insert_model_class", "args": {} },
-
-
     { "keys": ["alt+shift+o"], "command": "magento_open_from_magento_path", "args": {} },
 
 

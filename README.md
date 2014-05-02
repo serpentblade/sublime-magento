@@ -10,13 +10,6 @@ Sublime text 2 plugin for easier magento development. It contains code snippets 
     { "keys": ["ctrl+i"], "command": "magento_insert_class"}
 ```
 
-* **InsertModelClass command** (original work @serpentblade)
-
-    Used to insert model class name with a boilerplate function
-```
-    { "keys": ["ctrl+shift+m"], "command": "magento_insert_model_class"}
-```
-
 * **OpenFromMagentoPath command**
 
     On keypress fills the "goto" panel with the text between the nearest quotation marks (single or double). Useful for file paths. Also useful for 'magento-like' paths like ('core/input_filter_maliciousCode') where the command removes the '_' and '/' characters and also populates the "goto" panel.
