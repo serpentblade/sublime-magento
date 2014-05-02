@@ -1,8 +1,6 @@
 ##sublime-magento
 Sublime text 2 plugin for easier magento development. It contains code snippets for faster module creation (code within standard module files - mostly XML).
 
-**NOTE** - this package contains lot of trash files. It is under development, albeit very sloppy one at the time. It also has few undocumented commands.
-
 **Commands**
 
 * **InsertClass command** (original work @serpentblade)
@@ -59,7 +57,7 @@ Sublime text 2 plugin for easier magento development. It contains code snippets 
 ```
 
 **mag-confinit**
- * **magento module configuration initialization ** in app/code/[codePool]/Namespace/Modulename/etc/config.xml
+ * **magento module configuration initialization** in app/code/[codePool]/Namespace/Modulename/etc/config.xml
  * creates the following snippet with the cursor placed to insert your Namespace_Modulename, autopopulating the closing tag. Tabbing moves you to version.
 ```xml
 <config>
@@ -72,7 +70,7 @@ Sublime text 2 plugin for easier magento development. It contains code snippets 
 ```
 
 **mag-frontend**
- * **magento module configuration frontend ** in app/code/[codePool]/Namespace/Modulename/etc/config.xml
+ * **magento module configuration frontend** in app/code/[codePool]/Namespace/Modulename/etc/config.xml
  * creates the following snippet with the cursor placed to insert your router tag, autopopulating the closing tag. Tabbing moves you to module.
 ```xml
 <frontend>
@@ -89,7 +87,7 @@ Sublime text 2 plugin for easier magento development. It contains code snippets 
 ```
 
 **mag-modinit**
- * **magento module configuration of models, helpers and blocks ** in app/code/[codePool]/Namespace/Modulename/etc/config.xml
+ * **magento module configuration of models, helpers and blocks** in app/code/[codePool]/Namespace/Modulename/etc/config.xml
  * Extends the **mag-confinit** adding few new things
  * creates the following snippet with the cursor placed to insert your module name. When you insert it, everything else is autopopulated. Tabbing moves you to version tag.
 ```xml
