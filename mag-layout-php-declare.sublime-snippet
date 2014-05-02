@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[
-<?php ${1:} ?>
-]]></content>
-    <tabTrigger>layout-php-declare</tabTrigger>->
-</snippet>
