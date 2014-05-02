@@ -9,11 +9,6 @@ import sublime, sublime_plugin
 import os
 import re
 
-
-import re
-
-
-
 class MagentoOpenFromMagentoPathCommand(sublime_plugin.WindowCommand):
     def run(self):
 
@@ -50,10 +45,5 @@ class MagentoOpenFromMagentoPathCommand(sublime_plugin.WindowCommand):
                 replace_region(s_before, s_after+1)
 
         text = self.window.active_view().substr(self.window.active_view().sel()[0]).replace("_", " ").replace("/", " ")
-        # line = self.window.active_view().line(self.window.active_view().substr(self.window.active_view().sel()[0]))
-        # modelRegex = re.compile(r'Model')
-        # helperRegex = re.compile(r'helper')
-        # if modelRegex.search(line) is not None:
-        #   print 'matched'
         self.window.run_command("show_overlay", {"overlay": "goto", "text": text, "show_files": "true"})
 

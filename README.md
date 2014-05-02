@@ -5,32 +5,46 @@ Sublime text 2 plugin for easier magento development. It contains code snippets 
 
 **Commands**
 
-* **InsertClass comand** (original work @serpentblade)
- 
+* **InsertClass command** (original work @serpentblade)
+
     Used to insert class name -> works for all classes except controllers (unless you are willing to delete 'controllers' word)
 ```
     { "keys": ["ctrl+i"], "command": "magento_insert_class"}
 ```
 
-* **InsertClass comand**
- 
+* **InsertModelClass command** (original work @serpentblade)
+
+    Used to insert model class name with a boilerplate function
+```
+    { "keys": ["ctrl+shift+m"], "command": "magento_insert_model_class"}
+```
+
+* **OpenFromMagentoPath command**
+
     On keypress fills the "goto" panel with the text between the nearest quotation marks (single or double). Useful for file paths. Also useful for 'magento-like' paths like ('core/input_filter_maliciousCode') where the command removes the '_' and '/' characters and also populates the "goto" panel.
 ```
     { "keys": ["alt+shift+p"], "command": "magento_open_from_magento_path"}
 ```
 
+* **CreateModule command**
+
+    On keypress opens up a dialog for new module name. Name should be entered in the format of "Namespace_ModuleName". Newly created module will be located in the local/Namespace/ModuleName, and it will have few things created already (Model, Helper, Helper/Data.php, Block, controllers, etc, etc/config.xml, controllers), and also will be registered in "/app/etc/Modules/Namespace_Modulename.xml".
+    New module will have the default version of 0.0.1.
+```
+    { "keys": ["alt+shift+m"], "command": "magento_create_module"}
+```
+
 **Snippets**
 ```php
-    // with cursor on 'module'
     // (original work @serpentblade)
     model     => Mage::getModel('module/model');
     helper    => Mage::helper('module/helper');
     resource  => Mage::getResourceModel('module/model');
     singleton => Mage::getSingleton('module/model');
-    
+
 ```
 
-**mag-modreg** 
+**mag-modreg**
  * **magento module registration** in app/etc/modules/Namespace_Modulename
  * creates the following snippet with your module name already in place, and cursor on codePool
 ```xml
