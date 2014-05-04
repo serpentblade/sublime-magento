@@ -1,0 +1,11 @@
+[
+
+    { "keys": ["ctrl+i"], "command": "magento_insert_class", "args": {} },
+
+    
+    { "keys": ["alt+shift+o"], "command": "magento_open_from_magento_path", "args": {} },
+
+
+    { "keys": ["alt+shift+m"], "command": "magento_create_module", "args": {} }
+
+]

@@ -3,13 +3,28 @@
         "caption": "Magento: Open Class",
         "command": "magento_open"
     },
+    
     {
         "caption": "Magento: Open Parent Class",
         "command": "magento_open_parent"
     },
+
+    // copy text to "goto", like ("module/class_name") -> "module class name"
+    {
+        "caption": "Magento: Open From Path",
+        "command": "magento_open_from_magento_path"
+    },
+
+    // creates folder structure for a module
+    {
+        "caption": "Magento: Create Module",
+        "command": "magento_create_module"
+    },
+
+    // Inserts class name with regards to folder structure
     {
         "caption": "Magento: Insert Class Name",
         "command": "magento_insert_class"
-    }
+    },
 
 ]
