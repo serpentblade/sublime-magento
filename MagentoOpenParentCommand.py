@@ -21,7 +21,7 @@ class MagentoOpenParentCommand(sublime_plugin.TextCommand):
 
 		for folder in sublime.active_window().folders():
 			for root in rootDirectories:
-				print folder+root+filePath
+				print (folder+root+filePath)
 				if os.path.isfile(folder+root+filePath):
 					sublime.active_window().open_file(folder+root+filePath)
 					return
